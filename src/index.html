@@ -13,7 +13,8 @@
     <header id="header" class="header">
         <div class="logo">
             <a href="#" class="logo__link img-wrapper">
-                <img src="./img/logo.png" alt="">
+                <span class="logo__caption logo__caption--top">Arch</span>
+                <span class="logo__caption logo__caption--bottom">move</span>
             </a>
         </div>
 
@@ -21,152 +22,156 @@
 
         <nav class="navigation">
             <ul class="navigation--wrapper">
-                <li class="navigation__item"><a href="#" class="navigation__link">Головна</a></li>
-                <li class="navigation__item"><a href="./about.html" class="navigation__link">Про нас</a></li>
-                <li class="navigation__item">
-                    <a href="./products.html" class="navigation__link">Продукція</a>
-                    <ul class="submenu">
-                        <li class="submenu__item">
-                            <a href="" class="submenu__link">Submenu Link</a>
-                            <ul>
-                                <li><a href="">Dropdown link</a></li>
-                                <li><a href="">Dropdown link</a></li>
-                                <li><a href="">Dropdown link</a></li>
-                                <li><a href="">Dropdown link</a></li>
-                                <li><a href="">Dropdown link</a></li>
-                            </ul>
-                        </li>
-                        <li class="submenu__item"><a href="" class="submenu__link">Submenu Link</a></li>
-                        <li class="submenu__item"><a href="" class="submenu__link">Submenu Link</a></li>
-                        <li class="submenu__item"><a href="" class="submenu__link">Submenu Link</a></li>
-                        <li class="submenu__item"><a href="" class="submenu__link">Submenu Link</a></li>
-                    </ul>
-                </li>
-                <li class="navigation__item"><a href="./blog.html" class="navigation__link">Блог</a></li>
-                <li class="navigation__item"><a href="./shop.html" class="navigation__link">Магазин</a></li>
-                <li class="navigation__item"><a href="./downloads.html" class="navigation__link">Завантажити</a></li>
-                <li class="navigation__item"><a href="./contacts.html" class="navigation__link">Контакти</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Design Gallery</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">List of Architect</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Articles</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">How it Works</a></li>
             </ul>
         </nav>
 
-        <div class="chooseLanguage">
-            <button class="chooseLanguage__item">UA</button>
-            <button class="chooseLanguage__item">RU</button>
-            <button class="chooseLanguage__item">EN</button>
+        <div class="search-panel"></div>
+
+        <div class="login-panel">
+            <button class="btn login-panel__item">Sign In</button>
+            <button class="btn login-panel__item">Sign Up</button>
         </div>
 
     </header>
 
-    <div data-barba="container" data-barba-namespace="home" class="wrapper">
+    <main id="mainContent" class="main-content">
 
-        <main id="mainContent" class="main-content">
+        <section id="section1" class="hero">
+            <h1 class="hero__title title">Build Your Dream <b class="main-color">House</b></h1>
+            <div class="hero--wrapper">
+                <p class="hero__description">The first and most trusted marketplace of design & build house in The World. 100% guaranteed Build safe, comfortable and transparent with a project management for the best result</p>
+                <button class="btn hero__btn">Free Consultation</button>
+            </div>
+            <div class="hero__img">
+                <img src="./img/bg.jpg" alt="Hero image">
+            </div>
+        </section>
 
-            <section id="section1" class="slider">
-                    <div class="slider--wrapper">
-                        <div class="slider__item img-wrapper activeSlide">
-                            <img src="./img/slide1.jpeg" alt="">
-                            <img src="./img/slide-product.png" alt="">
-                        </div>
-                        <div class="slider__item img-wrapper">
-                            <img src="./img/slide2.jpeg" alt="">
-                            <img src="./img/slide-product.png" alt="">
-                        </div>
-                        <div class="slider__item img-wrapper">
-                            <img src="./img/slide3.jpeg" alt="">
-                            <img src="./img/slide-product.png" alt="">
-                        </div>
-                        <a class="slider-btn__item btn--prev"><span class="arrow arrow__left"></span></a>
-                        <a class="slider-btn__item btn--next"><span class="arrow arrow__right"></span></a>
+        <section class="rooms">
+            <h2 class="title rooms__title">Build professional valuable room for you</h2>
+            
+            <div class="rooms__slider slider">
+                <div class="slider__arrows">
+                    <button class="slider__arrows--prev">prev</button>
+                    <button class="slider__arrows--next">next</button>   
+                </div>
+    
+                <div class="rooms__slider--wrapper">
+                    <div class="room-slider__track">
+                        <div class="room-slider__slide">1</div>
+                        <div class="room-slider__slide">2</div>
+                        <div class="room-slider__slide">3</div>
+                        <div class="room-slider__slide">4</div>    
                     </div>
-                    <div class="slider-dots--wrapper">
-                        <span class="slider-dots__item active"></span>
-                        <span class="slider-dots__item"></span>
-                        <span class="slider-dots__item"></span>
+                </div>    
+            </div>
+
+        </section>
+
+        <section class="advantage">
+            <h2 class="advantage__title">Build your needs with Archmove</h2>
+            <div class="advantage__img">
+                <img src="./img/bg.jpg" alt="Advantage Image">
+            </div>
+            <div class="advantage__description advantage-group">
+                <ul class="advantage-group-list">
+                    <li class="advantage-group-list">
+                        <h3 class="advantage-group-list__caption">100% guaranteed project completion</h3>
+                        <p class="advantage-group-list__legend">Build safe, comfortable and transparent with a project management application with a joint account.</p>
+                    </li>
+                    <li class="advantage-group-list">
+                        <h3 class="advantage-group-list__caption">No additional fees</h3>
+                        <p class="advantage-group-list__legend">There are no hidden costs. The value of the offer you get is the value you paid.</p>
+                    </li>
+                    <li class="advantage-group-list">
+                        <h3 class="advantage-group-list__caption">Get escort from the Team</h3>
+                        <p class="advantage-group-list__legend">Monitor reports from the Arsitag team who check directly in the field.</p>
+                    </li>
+                </ul>
+                <button class="btn hero__btn">Free Consultation</button>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <h2 class="reviews__title title">Sound Too Good To Be True?</h2>
+
+            <div class="rooms__slider slider">
+                <div class="slider__arrows">
+                    <button class="slider__arrows--prev">prev</button>
+                    <button class="slider__arrows--next">next</button>   
+                </div>
+    
+                <div class="slider--wrapper">
+                    <div class="slider__track">
+                        <div class="slider__slide">1</div>
+                        <div class="slider__slide">2</div>
+                        <div class="slider__slide">3</div>
+                        <div class="slider__slide">4</div>    
                     </div>
-            </section>
+                </div>    
+            </div>
+        </section>
 
-            <section class="section">
+        <section class="footer-hero">
 
-            </section>
-            <section class="section">
+            <div class="footer-hero__img">
+                <img src="./img/advantage.jpg" alt="Footer Hero">
+            </div>
 
-            </section>
+            <div class="footer-hero--wrapper">
+                <div class="footer-hero__caption">Realize your dream project with Archmove</div>
+                <button class="btn hero__btn">Free Consultation</button>
+            </div>
 
-            <section class="section">
+        </section>
 
-            </section>
+        <section class="partners">
+            <h2 class="partners__title title">Our Partners</h2>
+            <div class="partners--wrapper partners-img-box">
+                <div class="partners-img-box__item">
+                    <img src="./img/partners-1.png" alt="Partner 1">
+                </div>
+                <div class="partners-img-box__item">
+                    <img src="./img/partners-1.png" alt="Partner 1">
+                </div>
+                <div class="partners-img-box__item">
+                    <img src="./img/partners-1.png" alt="Partner 1">
+                </div>
+                <div class="partners-img-box__item">
+                    <img src="./img/partners-1.png" alt="Partner 1">
+                </div>
+                <div class="partners-img-box__item">
+                    <img src="./img/partners-1.png" alt="Partner 1">
+                </div>
+            </div>
+        </section>
 
-            <section class="section">
-
-            </section>
-
-            <section class="section">
-
-            </section>
-
-            <section class="section">
-
-            </section>
+    </main>
 
 
-
-        </main>
-
-
-    </div>
 
     <footer id="footer" class="footer">
-        <div class="scroll-up">
-            <a href="" class="scroll-up__link"></a>
-        </div>
-
         <div class="footer--wrapper">
 
-            <ul class="footer__menu menu-links">
-                <li class="menu-links__item">
-                    <h3 class="menu-links__title">Контакти</h3>
-                    <ul class="submenu-links">
-                        <li class="submenu-links__item">
-                            <span>T:</span>
-                            <a href="tel:+3802351047000">+38(023)510 47 00</a>
-                        </li>
-                        <li class="submenu-links__item">
-                            <span>E:</span>
-                            <a href="mail:info@gmail.com">info@gmail.com</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="menu-links__item">
-                    <h3 class="menu-links__title">Розташування</h3>
-                    <ul class="submenu-links">
-                        <li class="submenu-links__item">3rd Km National</li>
-                        <li class="submenu-links__item">Road Katerini - Larissa</li>
-                        <li class="submenu-links__item">Greece</li>
-                    </ul>
-                </li>
-                <li class="menu-links__item">
-                    <h3 class="menu-links__title">Google Maps</h3>
-                    <ul class="submenu-links">
-                        <li class="submenu-links__item"><a href="">Open in maps</a></li>
-                    </ul>
-                </li>
-                <li class="menu-links__item">
-                    <h3 class="menu-links__title">Соціальні мережі</h3>
-                    <ul class="submenu-links social-menu">
-                        <li class="social-menu__item">
-                            <a class="social-menu__link facebook" href=""></a>
-                        </li>
-                        <li class="social-menu__item">
-                            <a class="social-menu__link reddit" href=""></a>
-                        </li>
-                        <li class="social-menu__item">
-                            <a class="social-menu__link instagram" href=""></a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+            <nav class="footer-navigation">
+                <ul class="footer-navigation--wrapper">
+                    <li class="footer-navigation__item"><a href="#" class="footer-navigation__link">Design Gallery</a></li>
+                    <li class="footer-navigation__item"><a href="#" class="footer-navigation__link">List of Architect</a></li>
+                    <li class="footer-navigation__item"><a href="#" class="footer-navigation__link">Articles</a></li>
+                    <li class="footer-navigation__item"><a href="#" class="footer-navigation__link">How it Works</a></li>
+                </ul>
+            </nav>
 
-            <p class="copyright">&copy; qmpwwsd</p>
+            <div class="logo">
+                <a href="#" class="logo__link img-wrapper">
+                    <span class="logo__caption logo__caption--top">Arch</span>
+                    <span class="logo__caption logo__caption--bottom">move</span>
+                </a>
+            </div>
 
         </div>
     </footer>
