@@ -1,203 +1,36 @@
-@import "./src/sass/helpers/var"
-
-*, *:before, *:after
-  box-sizing: border-box
-  margin: 0
-  padding: 0
+@import '../helpers/var'
 
 body
-  color: $black
-  display: flex
-  flex-direction: column
-  overflow-x: hidden
-
-section
-  width: 100%
-
-h1, h2, h3, h4
-  color: $black
-
-span
-  margin-right: 0.25rem
+    margin: 0
+    padding: 0
+    font-family: NewYork
 
 a
-  color: $black
-  text-decoration: none
-  text-align: center
+    color: $black
+    transition: $transition
+    text-decoration: none
+    &:hover
+        color: $red
 
-ul
-  list-style: none
+strong
+    font-weight: 700
 
-.container
-  display: flex
-  flex-direction: column
-  margin: 0 auto
-  width: 85%
-  height: 100%
-
-.main-content
-  width: 100%
-  display: flex
-  flex-direction: column
-
-.link
-  display: flex
-  padding: 1rem
-  font-size: 1.5rem
-  justify-content: center
-  align-items: center
-  text-align: center
-  line-height: 1.5rem
-  width: 15vw
-  background-color: $olive
-  color: $white
-  align-self: flex-end
-  transition: $transition
-
-  &:hover
-    background-color: $light-olive
-    cursor: pointer
-
-  &--wrapper
-    display: flex
-    justify-content: flex-end
-    align-items: center
-    width: 100%
-
-.bold
-  font-weight: 600
-  margin-right: 0.5rem
-
-.img-wrapper
-  width: 100%
-  height: 100%
-  overflow: hidden
-  position: relative
-  img
-    width: 100%
-    height: 100%
-    object-fit: cover
-
-.list-item--margin
-  margin-bottom: 2.5%
-
-.breadcrumbs
-  display: flex
-  margin: 2.5% 0
-  font-size: 1.25vw
-
-  &__link .bold
-    color: $sand-olive
-
-.transition
-  display: flex
-  position: fixed
-  z-index: 9999
-  height: 100%
-  width: 100%
-  top: 0
-  left: 0
-  margin: 0
-  pointer-events: none
-
-  li
-    transform: scaleY(0)
-    background-color: $orange
-    transform-origin: bottom left
-    height: 100%
-    width: 20%
-
-.scroll--hidden
-  overflow: hidden
-
-.loader
-  position: fixed
-  top: 0
-  left: 0
-  width: 100%
-  height: 100vh
-  pointer-events: none
-  z-index: 9999
-  visibility: hidden
-  opacity: 0
-  background-color: orange
-
-.wrapper
-  position: absolute
-  top: 0
-  left: 0
-  width: 100%
-
-.is-cloned
-  position: absolute !important
-  top: 0
-  z-index: 9999
-  width: auto
-  background: black
-
-.title
-  font-weight: 500
-  position: relative
-  padding: 0 0 2.5%
-  &:after
-    content: ''
-    display: block
-    position: absolute
-    width: 100%
-    height: 3px
-    bottom: 0
-    left: 0
-    background-color: rgba($olive, 0.5)
-
-.scroll-up
-  position: absolute
-  top: 0
-  right: 7.5%
-  transform: translateY(-100%)
-  background-color: #434344
-  width: 3.5vw
-  height: 2.5vw
-  display: flex
-  justify-content: center
-  align-items: center
-  border-top-left-radius: 10px
-  border-top-right-radius: 10px
-
-  &__link
+.btn
     display: flex
     justify-content: center
     align-items: center
-    width: 50%
-    height: 50%
-    background: 
-      image: url("../img/sprite.svg#up-arrow")
-      repeat: no-repeat
-      size: contain
-      position: center
+    text-align: center
+    border: none
+    padding: 1rem 1.5rem
+    border-radius: 3px
+    font-size: calc(0.25rem + 0.75vw)
+    background-color: transparent
+    font-family: NewYork
 
+    &--color
+        background-color: $red
+        color: $white
 
-@media screen and (max-width: 1224px)
-  .scroll-up
-    width: 5vw
-    height: 3.75vw
-
-
-@media screen and (max-width: 1024px)
-  .link
-    width: 17.5vw
-    padding: 0.75rem 1rem
-    font-size: 2vw
-@media screen and (max-width: 768px)
-  .link
-    width: 20vw
-    font-size: 2.5vw
-
-  .breadcrumbs
-    font-size: 2.25vw
-
-@media screen and (max-width: 480px)
-  .link
-    width: 50vw
-    font-size: 4vw
-  .breadcrumbs
-    font-size: 3.5vw
+.main-color
+    color: $red
+    font-style: italic
