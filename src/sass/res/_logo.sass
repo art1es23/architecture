@@ -1,41 +1,25 @@
-@import "./src/sass/helpers/var"
+@import '../helpers/var'
 
 .logo
-  display: flex
-  align-items: center
-  justify-content: space-between
-  width: 10%
-  height: 3.5rem
-  &__link
-    width: 100%
     display: flex
+    justify-content: center
     align-items: center
-    height: 100%
+    width: 5rem
 
-  &__icon
-    width: 35%
-    height: 100%
-    border: 1px solid #dc143c
-    border-radius: 50%
-    margin-right: auto
+    &__link
+        display: flex
+        flex-direction: column
+        justify-content: center
+        width: 100%
 
-  &__caption
-    display: flex
-    font-size: 1.5rem
+    &__caption
+        display: flex
+        font-size: calc(0.25rem + 1vw)
+        width: 100%
+        letter-spacing: 1.5px
+        color: $red
+        font-weight: 700
 
-@media screen and (max-width: 1224px)
-  .logo
-    height: 5rem
-    width: 15%
-
-@media screen and (max-width: 1024px)
-  .logo
-    width: 17.5%
-
-@media screen and (max-width: 768px)
-  .logo
-    width: 22.5%
-
-@media screen and (max-width: 480px)
-  .logo
-    width: 30%
+        &--bottom
+            justify-content: flex-end
+            text-align: right

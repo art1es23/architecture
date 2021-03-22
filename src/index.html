@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/main.min.css">
 
 </head>
-<body data-barba="wrapper">
+<body>
 
     <header id="header" class="header">
         <div class="logo">
@@ -33,7 +33,7 @@
 
         <div class="login-panel">
             <button class="btn login-panel__item">Sign In</button>
-            <button class="btn login-panel__item">Sign Up</button>
+            <button class="btn btn--color login-panel__item">Sign Up</button>
         </div>
 
     </header>
@@ -44,28 +44,44 @@
             <h1 class="hero__title title">Build Your Dream <b class="main-color">House</b></h1>
             <div class="hero--wrapper">
                 <p class="hero__description">The first and most trusted marketplace of design & build house in The World. 100% guaranteed Build safe, comfortable and transparent with a project management for the best result</p>
-                <button class="btn hero__btn">Free Consultation</button>
+                <button class="btn btn--color hero__btn">Free Consultation</button>
             </div>
             <div class="hero__img">
-                <img src="./img/bg.jpg" alt="Hero image">
+                <img src="./img/hero.png" alt="Hero image">
             </div>
         </section>
 
         <section class="rooms">
             <h2 class="title rooms__title">Build professional valuable room for you</h2>
             
-            <div class="rooms__slider slider">
-                <div class="slider__arrows">
-                    <button class="slider__arrows--prev">prev</button>
-                    <button class="slider__arrows--next">next</button>   
+            <div class="rooms-slider slider">
+                <div class="rooms-slider__arrows slider__arrows">
+                    <button class="prev">
+                        <svg class="">
+                            <use xlink:href="./img/sprite.svg#prev"></use>
+                        </svg>
+                    </button>
+                    <button class="next">
+                        <svg class="">
+                            <use xlink:href="./img/sprite.svg#next"></use>
+                        </svg>
+                    </button>   
                 </div>
     
-                <div class="rooms__slider--wrapper">
-                    <div class="room-slider__track">
-                        <div class="room-slider__slide">1</div>
-                        <div class="room-slider__slide">2</div>
-                        <div class="room-slider__slide">3</div>
-                        <div class="room-slider__slide">4</div>    
+                <div class="rooms-slider--wrapper slider--wrapper">
+                    <div class="rooms-slider__track slider__track">
+                        <div class="rooms-slider__slide slider__slide">
+                            <img src="./img/room-1.png" alt="Room Image">
+                        </div>
+                        <div class="rooms-slider__slide slider__slide">
+                            <img src="./img/room-1.png" alt="Room Image">
+                        </div>
+                        <div class="rooms-slider__slide slider__slide">
+                            <img src="./img/room-1.png" alt="Room Image">
+                        </div>
+                        <div class="rooms-slider__slide slider__slide">
+                            <img src="./img/room-1.png" alt="Room Image">
+                        </div>    
                     </div>
                 </div>    
             </div>
@@ -73,58 +89,79 @@
         </section>
 
         <section class="advantage">
-            <h2 class="advantage__title">Build your needs with Archmove</h2>
+            <h2 class="advantage__title">Build your needs with <b class="main-color">Archmove</b></h2>
             <div class="advantage__img">
-                <img src="./img/bg.jpg" alt="Advantage Image">
+                <img src="./img/advantage.jpg" alt="Advantage Image">
             </div>
             <div class="advantage__description advantage-group">
                 <ul class="advantage-group-list">
-                    <li class="advantage-group-list">
+                    <li class="advantage-group-list__item">
                         <h3 class="advantage-group-list__caption">100% guaranteed project completion</h3>
                         <p class="advantage-group-list__legend">Build safe, comfortable and transparent with a project management application with a joint account.</p>
                     </li>
-                    <li class="advantage-group-list">
+                    <li class="advantage-group-list__item">
                         <h3 class="advantage-group-list__caption">No additional fees</h3>
                         <p class="advantage-group-list__legend">There are no hidden costs. The value of the offer you get is the value you paid.</p>
                     </li>
-                    <li class="advantage-group-list">
+                    <li class="advantage-group-list__item">
                         <h3 class="advantage-group-list__caption">Get escort from the Team</h3>
                         <p class="advantage-group-list__legend">Monitor reports from the Arsitag team who check directly in the field.</p>
                     </li>
                 </ul>
-                <button class="btn hero__btn">Free Consultation</button>
+                <button class="btn btn--color advantage__btn">Free Consultation</button>
             </div>
         </section>
 
         <section class="reviews">
-            <h2 class="reviews__title title">Sound Too Good To Be True?</h2>
+            <h2 class="reviews__title title">Sound Too Good To Be <b class="main-color">True?</b></h2>
 
-            <div class="rooms__slider slider">
-                <div class="slider__arrows">
-                    <button class="slider__arrows--prev">prev</button>
-                    <button class="slider__arrows--next">next</button>   
+            <div class="reviews__slider slider">
+                <div class="reviews-slider__arrows slider__arrows">
+                    <button class="prev">
+                        <svg class="">
+                            <use xlink:href="./img/sprite.svg#prev"></use>
+                        </svg>
+                    </button>
+                    <button class="next">
+                        <svg class="">
+                            <use xlink:href="./img/sprite.svg#next"></use>
+                        </svg>
+                    </button>   
                 </div>
-    
-                <div class="slider--wrapper">
-                    <div class="slider__track">
-                        <div class="slider__slide">1</div>
-                        <div class="slider__slide">2</div>
-                        <div class="slider__slide">3</div>
-                        <div class="slider__slide">4</div>    
+
+                <div class="reviews-slider--wrapper slider--wrapper">
+                    <div class="reviews-slider__track slider__track">
+                        <div class="slider__slide reviews-slider__slide review">
+                            <p class="review__description">We just wanted to thank you for this fantastic website! We are so grateful for being able to advertise our Petite cabin and receive feedback from people from all over the U.S. and even further.</p>
+                            <p class="review__autor"><strong>Adam Morph</strong> — CEO Alfatech</p>                            
+                        </div>
+                        <!-- <div class="slider__slide reviews-slider__slide review">
+                            <p class="review__description">We just wanted to thank you for this fantastic website! We are so grateful for being able to advertise our Petite cabin and receive feedback from people from all over the U.S. and even further.</p>
+                            <p class="review__autor"><strong>Adam Morph</strong> — CEO Alfatech</p>                            
+                        </div>
+                        <div class="slider__slide reviews-slider__slide review">
+                            <p class="review__description">We just wanted to thank you for this fantastic website! We are so grateful for being able to advertise our Petite cabin and receive feedback from people from all over the U.S. and even further.</p>
+                            <p class="review__autor"><strong>Adam Morph</strong> — CEO Alfatech</p>                            
+                        </div>
+                        <div class="slider__slide reviews-slider__slide review">
+                            <p class="review__description">We just wanted to thank you for this fantastic website! We are so grateful for being able to advertise our Petite cabin and receive feedback from people from all over the U.S. and even further.</p>
+                            <p class="review__autor"><strong>Adam Morph</strong> — CEO Alfatech</p>                            
+                        </div>     -->
                     </div>
                 </div>    
+
             </div>
         </section>
 
         <section class="footer-hero">
 
             <div class="footer-hero__img">
-                <img src="./img/advantage.jpg" alt="Footer Hero">
+                <img src="./img/footer-hero.png" alt="Footer Hero">
             </div>
 
             <div class="footer-hero--wrapper">
-                <div class="footer-hero__caption">Realize your dream project with Archmove</div>
-                <button class="btn hero__btn">Free Consultation</button>
+                <div class="footer-hero__caption">Realize your dream project with <b class="main-color">Archmove</b></div>
+                <button class="btn btn--color footer-hero__btn">Free Consultation</button>
             </div>
 
         </section>
@@ -157,14 +194,13 @@
     <footer id="footer" class="footer">
         <div class="footer--wrapper">
 
-            <nav class="footer-navigation">
-                <ul class="footer-navigation--wrapper">
-                    <li class="footer-navigation__item"><a href="#" class="footer-navigation__link">Design Gallery</a></li>
-                    <li class="footer-navigation__item"><a href="#" class="footer-navigation__link">List of Architect</a></li>
-                    <li class="footer-navigation__item"><a href="#" class="footer-navigation__link">Articles</a></li>
-                    <li class="footer-navigation__item"><a href="#" class="footer-navigation__link">How it Works</a></li>
-                </ul>
-            </nav>
+            <ul class="footer-navigation">
+                <li class="footer-navigation__item"><a href="#" class="footer-navigation__link">About Us</a></li>
+                <li class="footer-navigation__item"><a href="#" class="footer-navigation__link">How it Works</a></li>
+                <li class="footer-navigation__item"><a href="#" class="footer-navigation__link">FAQ</a></li>
+                <li class="footer-navigation__item"><a href="#" class="footer-navigation__link">Contact Us</a></li>
+                <li class="footer-navigation__item"><a href="#" class="footer-navigation__link">Privacy Policy</a></li>
+            </ul>
 
             <div class="logo">
                 <a href="#" class="logo__link img-wrapper">
