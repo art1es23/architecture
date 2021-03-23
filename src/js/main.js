@@ -1,6 +1,5 @@
+import slider from './modules/slider';
 
-"use sctrict";
-
-const category = 'toys';
-
-console.log(category);
+window.addEventListener('DOMContentLoaded', () => {
+    slider();
+})
